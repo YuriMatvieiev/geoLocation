@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Based Map</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="firstPopup" class="firstPopup">
+      <div class="firstPopup__wrapper">
+        <div class="firstPopup__banner">
+          <img class="firstPopup__logo" src="img/logo.svg" />
+          <div class="firstPopup__title red-color">
+            Window Replacement Relief Service
+          </div>
+          <h1 class="firstPopup__text">
+            <span class="red-color">Good News!</span> There Are
+            <span class="red-color">(4)</span> Qualified Companies In Your Area
+            Registered For The Window Savings Service.
+          </h1>
+          <h1 class="firstPopup__subtext">
+            Find out within
+            <u class="">90 seconds </u> if you qualify for brand new windows on
+            the next page...
+          </h1>
+          <a href="#" class="firstPopup__btn">Enter Your Zip Here </a>
+          <img src="img/trustpilot.png" alt="Image" class="firstPopup__trust" />
+        </div>
+      </div>
+    </div>
+    <div id="generalPopup" class="popup hide">
+      <button onclick="closePopup()" class="popup__close">
+        <img src="img/icon-close.svg" alt="Image" />
+      </button>
+      <div class="popup__inner" bis_skin_checked="1">
+        <div class="popup__content">
+          <h4 id="companyName" class="popup__title">Liberty Home Assurance</h4>
+          <span id="companyNumbers">Insured 1,200+ homes</span>
+          <span id="companyReviews">500+ reviews</span>
+          <p id="description" class="popup__contentText">
+            Coverage: Thorough, with options for customizable packages
+          </p>
+          <div class="popup__ratingWrapper">
+            <div class="popup__starsWrapper">
+              <span class="popup__star"></span>
+              <span class="popup__star"></span>
+              <span class="popup__star"></span>
+              <span class="popup__star"></span>
+              <span class="popup__star popup__star-half"></span>
+            </div>
+            <span id="companyRating">4.6</span>
+          </div>
+        </div>
+        <a href="#" class="popup__btn">Get Free Quote</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__container">
+        <img src="img/logo.svg" alt="" class="footer__logo" />
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
